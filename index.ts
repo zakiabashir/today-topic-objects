@@ -1,26 +1,26 @@
-// #! /usr/bin/env node
-// import inquirer from "inquirer";
-// // today topic is object:
+#! /usr/bin/env node
+import inquirer from "inquirer";
+// today topic is object:
 
-// // let user1: {
-// //     name: string,
-// //     age1: number,
-// //     role: string
-// // } =  {
-// //     name: "zakia",
-// //     age1: 1 ,
-// //     role: 'mother'
-// // }
-// // console.log(user1.age1);
-// // type alias
-// // type user = { name: string;
-// //     age1: number;
-// //     role: string;
-// //     class:{
-// //         name: string;
-// //         rollno: number;
-// //     }
-// // }
+// let user1: {
+//     name: string,
+//     age1: number,
+//     role: string
+// } =  {
+//     name: "zakia",
+//     age1: 1 ,
+//     role: 'mother'
+// }
+// console.log(user1.age1);
+// type alias
+// type user = { name: string;
+//     age1: number;
+//     role: string;
+//     class:{
+//         name: string;
+//         rollno: number;
+//     }
+// }
 // // let user1:  user = {
     
 // //     name: "zakia",
@@ -33,7 +33,7 @@
 // // }
 // // console.log(user1.age1);
 // // console.log(user1.role);
-// // console.log(user1.class)
+// // console.log(user1.cla
 // //  template type literal: 
 // // agr nma khta hon kh srf 3 colors aloow kry isky ilawa or koi nhi
 // // isko specific krny kly hum literal types use krty hn:
