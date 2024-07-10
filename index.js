@@ -1,37 +1,37 @@
-// #! /usr/bin/env node
-// import inquirer from "inquirer";
-// // today topic is object:
-// // let user1: {
-// //     name: string,
-// //     age1: number,
-// //     role: string
-// // } =  {
-// //     name: "zakia",
-// //     age1: 1 ,
-// //     role: 'mother'
-// // }
-// // console.log(user1.age1);
-// // type alias
-// // type user = { name: string;
-// //     age1: number;
-// //     role: string;
-// //     class:{
-// //         name: string;
-// //         rollno: number;
-// //     }
-// // }
-// // let user1:  user = {
-// //     name: "zakia",
-// //     age1: 1 ,
-// //     role: "mother",
-// //     class: { // nested object
-// //         name: "zimal",
-// // rollno: 234,
-// //     },
-// // }
-// // console.log(user1.age1);
-// // console.log(user1.role);
-// // console.log(user1.class)
+#! /usr/bin/env node
+let user = {
+    name: "Alice",
+    age: 25
+};
+let oldUserReference = user;
+// console.log(oldUserReference.age); // Outputs 25, which is stale data
+user.age = 26;
+console.log(user);
+console.log(oldUserReference);
+// // If we update the user object again
+// user.age = 27;
+// console.log(user.age); // Outputs 27
+// console.log(oldUserReference.age); // Still outputs 25, which is stale data
+let ball = {
+    diameter: 10,
+};
+let sphere = {
+    diameter: 20,
+};
+// ball = {
+//     diameter: 30,
+//     length: 10,
+// }
+let tube = {
+    diameter: 30,
+    length: 10
+};
+ball = tube;
+console.log(ball);
+// ================ Tuple ====================
+// let newArray : string[] = ['ali',123]
+let newArray;
+newArray = ['color', 100, 'heght', true];
 // //  template type literal: 
 // // agr nma khta hon kh srf 3 colors aloow kry isky ilawa or koi nhi
 // // isko specific krny kly hum literal types use krty hn:
@@ -71,9 +71,14 @@
 //  console.log(std1);
 //  console.log(teacher1);
 //  let countries: "pakistan"| "india" | "turkey" | "iran"  = "india";
-let arr = [1, 2, 3];
-console.log(arr.indexOf(4));
-let array = [];
-array.push("green", "yellow");
-console.log(array[array.length - 2]);
-export {};
+// let arr = [1, 2, 3];
+// console.log(arr.indexOf(4));
+// let array = [];
+// array.push("green","yellow");
+// console.log(array[array.length-2]);
+import { add, sub, mul, div } from "./module.js";
+add(5, 8);
+sub(9, 5);
+mul(9, 4);
+div(8, 2);
+// vercel p hum apni websites free ma host kryn gy / vercel p signup krna h or phr isko github k sath deploy krna h
